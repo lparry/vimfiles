@@ -16,6 +16,7 @@ set backspace=indent,eol,start " allow backspacing over everything in insert mod
 " backup files
 set nobackup
 set backupskip=/tmp/*,/private/tmp/*"
+set noswapfile
 
 " tabs
 set expandtab " use spaces when <Tab> is inserted
