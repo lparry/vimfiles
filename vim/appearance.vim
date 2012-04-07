@@ -2,7 +2,7 @@
 syntax on
 
 if has("gui_running")
-  set background=dark
+  set background=light
 else
   set background=dark
 endif
@@ -44,8 +44,8 @@ highlight Visual guibg=#FF0000 ctermbg=60
 highlight Search guifg=NONE ctermfg=NONE guibg=#990000 ctermbg=235 gui=italic cterm=underline
 
 " line and column makers
-highlight CursorLine ctermbg=none cterm=underline gui=underline
-highlight CursorColumn ctermbg=none cterm=underline gui=underline
+highlight CursorLine ctermbg=none cterm=bold gui=bold
+highlight CursorColumn ctermbg=none cterm=bold gui=bold
 set cursorcolumn
 set cursorline
 highlight LineNr ctermfg=gray
