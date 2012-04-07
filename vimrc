@@ -3,6 +3,7 @@
 " konqterm == shell within vim
 "
 set nocompatible
+set encoding=utf-8
 filetype off
 set shell=/bin/bash
 set guifont=Menlo\ Regular\ for\ Powerline:h14

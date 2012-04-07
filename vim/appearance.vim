@@ -11,12 +11,20 @@ endif
 set t_Co=256
 
 set guifont=Menlo\ Regular\ for\ Powerline:h14
-let g:Powerline_symbols = "fancy"
 
+let os = substitute(system('uname'), "\n", "", "")
+if os == "Linux"
+  let g:Powerline_symbols = "unicode"
+else
+  let g:Powerline_symbols = "fancy"
+endif
 
 set wrap
 "set number " line numbers
-set relativenumber
+if version >= 730
+  set relativenumber
+endif
+
 set ruler " show cursor line and column in the status line
 set showmatch " briefly jump to matching bracket
 set matchtime=10 " tenths of a second to show
@@ -37,7 +45,9 @@ let g:solarized_termcolors = 256
 let g:solarized_italic    =  0
 colorscheme solarized
 
-set colorcolumn=+78
+if version >= 730
+  set colorcolumn=+78
+endif
 
 "make visual mode stand out better
 highlight Visual guibg=#FF0000 ctermbg=60
@@ -54,3 +64,4 @@ highlight LineNr ctermfg=gray
 if has("gui_running")
   set transp=0
 endif
+
