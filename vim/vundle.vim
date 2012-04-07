@@ -21,6 +21,8 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle "mileszs/ack.vim"
 Bundle "sjl/gundo.vim"
 Bundle "shemerey/vim-peepopen"
+Bundle "lparry/vim-iterm-rspec"
+Bundle "lparry/vim-rspec-jump"
 
 
 "needs auditing, wtf are these?
@@ -45,6 +47,7 @@ Bundle 'SuperTab-continued.'
 Bundle 'Rainbow-Parenthesis'
 Bundle 'Align'
 Bundle 'AutoComplPop'
+Bundle 'github-theme'
  "Bundle 'FuzzyFinder'
  " non github repos
  "Bundle 'git://git.wincent.com/command-t.git'
