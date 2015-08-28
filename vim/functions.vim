@@ -1,3 +1,9 @@
+" select the current paragraph
+nmap vb v}k$o{jo
+
+" auto-format the current paragraph
+nmap gW vb:s/\s\+/ /g<cr>vbgwA <esc>vb:s/\s\+$//g<cr>,
+
 " helpful tab completion
 " function! InsertTabWrapper(direction)
 "     let col = col('.') - 1
