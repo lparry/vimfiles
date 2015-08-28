@@ -141,3 +141,6 @@ map <C-p> :bp<cr>
 " Gary Bernhardt's inline and extract variable functions
 vnoremap <leader>rv :call ExtractVariable()<cr>
 nnoremap <leader>ri :call InlineVariable()<cr>
+
+" expand %% to the current file's directory
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
