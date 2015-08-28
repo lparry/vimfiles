@@ -25,6 +25,8 @@ vmap < <gv
 
 "maximize windows
 map _ <c-w>_
+map + <c-w>+
+map - <c-w>-
 
 " colon commands (must start with capital letters sadly)
 command W write
