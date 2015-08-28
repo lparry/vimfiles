@@ -41,6 +41,10 @@ set clipboard=unnamed
 set mouse=a
 
 
+" Make .md files highlight as markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+
 " SuperTab preferences
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabMappingForward = '<tab>'
