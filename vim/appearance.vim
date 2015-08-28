@@ -1,14 +1,15 @@
 " visual stuff
 syntax on
 
+"256 color terminal support (ie. iTerm.app on osx)
+set t_Co=256
+
 if has("gui_running")
   set background=light
 else
   set background=dark
 endif
 
-"256 color terminal support (ie. iTerm.app on osx)
-set t_Co=256
 
 set guifont=Menlo\ Regular\ for\ Powerline:h14
 
