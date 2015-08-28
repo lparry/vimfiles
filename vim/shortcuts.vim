@@ -47,6 +47,9 @@ vnoremap <Up> gk
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
 
+" write to a read only file
+cnoremap sudow w !sudo tee %
+
 " Bubble single lines
 nmap <C-Up> ddkP
 nmap <C-Down> ddp
