@@ -12,9 +12,9 @@ set guifont=Menlo\ Regular\ for\ Powerline:h14
 source ~/.vim/vundle.vim
 
 
+
 " load some plugins manually
 runtime macros/matchit.vim " better pair matching for %
-"source ~/.vim/bundle/lucas-rspec/autoload/rspec.vim
 
 " load up all my config shizzle
 source ~/.vim/functions.vim
