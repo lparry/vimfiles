@@ -60,7 +60,7 @@ vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'
 map <Leader>w :call TidyWhiteSpace()<CR>
 map <Leader>W :call TidyWhiteSpaceAggressive()<CR>
 map <leader>i ggVG=
-map <Leader>s :Spec <cr>
+map <Leader>t :!tmux send-keys -t dev:test "rake test" C-m &<CR> <CR>
 map <Leader>j :silent vs <C-R>=rspec#SpecOrCodeToggle() <CR> <CR>
 map <Leader>cuke mcggVG=:%s/^\(\s*\)And/\1  And/<cr>:%s/^\(\s*\)Then/\1 Then/<cr>:%s/^\(\s*\)When/\1 When/<cr>,<space>`c
 
