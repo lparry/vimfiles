@@ -1,74 +1,52 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" required!
+Plugin 'VundleVim/Vundle.vim'
 
- " My Bundles here:
- "
- " original repos on github
-Bundle 'sunaku/vim-ruby-minitest'
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-dispatch'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'godlygeek/tabular'
-Bundle 'Lokaltog/vim-powerline'
-Bundle "mileszs/ack.vim"
-Bundle "sjl/gundo.vim"
-Bundle "shemerey/vim-peepopen"
-Bundle "lparry/vim-iterm-rspec"
-Bundle "lparry/vim-rspec-jump"
-Bundle "ConradIrwin/vim-bracketed-paste"
+" My Plugins here:
+Plugin 'sunaku/vim-ruby-minitest'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-ragtag' " Enhances surround.vim.
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-endwise'
+" Plugin 'godlygeek/tabular'
+Plugin 'bling/vim-airline'
+Plugin 'sjl/gundo.vim'
+" Plugin 'lparry/vim-rspec-jump'
+Plugin 'ConradIrwin/vim-bracketed-paste' " Make vim's paste less shit
+Plugin 'tpope/vim-repeat' " lets . interact with plugin maps
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'bogado/file-line' " lets you specify line number when opening a file from the command line
+Plugin 'airblade/vim-gitgutter' " git status in a gutter
+Plugin 'tomtom/tcomment_vim' " easy code commenting
+"Plugin 'othree/vim-autocomplpop' " auto-show the auto-completion menu
 
+"Plugin 'SuperTab--Van-Dewoestine'
 
-"needs auditing, wtf are these?
-Bundle "tpope/vim-repeat"
-Bundle "notahat/vim-reruby"
-Bundle "vim-ruby/vim-ruby"
-Bundle "bronson/vim-ruby-block-conv"
-Bundle 'Raimondi/VimRegEx.vim'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'sjbach/lusty'
-"Bundle 'scrooloose/nerdtree'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'bogado/file-line'
-Bundle 'tpope/vim-pathogen'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'kana/vim-textobj-user'
-Bundle 'airblade/vim-gitgutter'
+" Colorschemes
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'altercation/vim-colors-solarized'
 
- " vim-scripts repos
-Bundle 'tComment'
-Bundle 'L9'
-Bundle 'SuperTab-continued.'
-Bundle 'Rainbow-Parenthesis'
-Bundle 'Align'
-Bundle 'AutoComplPop'
-Bundle 'github-theme'
-Bundle 'VimClojure'
-Bundle 'Puppet-Syntax-Highlighting'
-Bundle 'vim-auto-save'
+Plugin 'vim-auto-save'
 let g:auto_save = 1  " enable AutoSave on Vim startup
 let g:auto_save_no_updatetime = 5
 
- "Bundle 'FuzzyFinder'
- " non github repos
- "Bundle 'git://git.wincent.com/command-t.git'
-filetype plugin indent on     " required!
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" Put your non-Plugin stuff after this line
