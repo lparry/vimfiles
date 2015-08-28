@@ -30,6 +30,11 @@ function! RemoveDoubleBlankLines()
     :%s/\n\s*\n\s*\n/\r\r/g
   endif
 endfunction
+function! RemoveDoubleBlankLines()
+  if search('\n\s*\n\s*\n')
+    :%s/\n\s*\n\s*\n/\r\r/g
+  endif
+endfunction
 
 function! TidyWhiteSpace()
   if search('\S\s\+$')
