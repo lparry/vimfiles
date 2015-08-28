@@ -10,6 +10,7 @@ else
   set background=dark
 endif
 
+let g:solarized_termtrans=1
 
 set guifont=Menlo\ Regular\ for\ Powerline:h14
 
