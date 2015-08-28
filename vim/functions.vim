@@ -1,3 +1,9 @@
+function! BuffToTab()
+  :bufdo tab split
+  :tabdo set syntax
+endfunction
+
+
 " select the current paragraph
 nmap vb v}k$o{jo
 
