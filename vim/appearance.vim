@@ -23,9 +23,8 @@ endif
 
 set wrap
 "set number " line numbers
-if version >= 730
-  set relativenumber
-endif
+"set relativenumber
+set nonumber
 
 set ruler " show cursor line and column in the status line
 set showmatch " briefly jump to matching bracket
