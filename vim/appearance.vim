@@ -10,9 +10,29 @@ else
   set background=dark
 endif
 
-let g:solarized_termtrans=1
+" "colorscheme
+" let g:solarized_visibility = "high"
+" let g:solarized_termcolors = 256
+" let g:solarized_italic    =  0
+" let g:solarized_termtrans=1
+" colorscheme solarized
+colorscheme jellybeans
 
-set guifont=Menlo\ Regular\ for\ Powerline:h14
+let g:airline_powerline_fonts = 1
+set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h12
+
+" set guifont=Menlo\ Regular\ for\ Powerline:h14
+" " Menlo used old style powerline codes, needs the following
+" if !exists('g:airline_symbols')
+"   let g:airline_symbols = {}
+" endif
+" let g:airline_left_sep = '⮀'
+" let g:airline_left_alt_sep = '⮁'
+" let g:airline_right_sep = '⮂'
+" let g:airline_right_alt_sep = '⮃'
+" let g:airline_symbols.branch = '⭠'
+" let g:airline_symbols.readonly = '⭤'
+" let g:airline_symbols.linenr = '⭡'
 
 let os = substitute(system('uname'), "\n", "", "")
 if os == "Linux"
@@ -40,15 +60,7 @@ set nolist!
 set laststatus=2
 "set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [format:%{&ff}]\ [type:%y]\ [ascii:\%03.3b]\ [hex:\%02.2B]\ [pos:%l,%v][%p%%]\ [len:%L]
 
-"colorscheme
-let g:solarized_visibility = "high"
-let g:solarized_termcolors = 256
-let g:solarized_italic    =  0
-colorscheme solarized
-
-if version >= 730
-  set colorcolumn=+78
-endif
+set colorcolumn=+78
 
 "make visual mode stand out better
 highlight Visual guibg=#FF0000 ctermbg=60
