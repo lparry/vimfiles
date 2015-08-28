@@ -2,6 +2,8 @@
 filetype plugin on
 filetype indent on
 
+set wrap
+
 " searching
 set ignorecase
 set smartcase
@@ -37,3 +39,17 @@ set clipboard=unnamed
 " mouse works in insert mode
 "if has("gui_running")
 set mouse=a
+
+
+" SuperTab preferences
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabMappingForward = '<tab>'
+let g:SuperTabMappingBackward = '<s-tab>'
+
+
+au BufRead,BufNewFile *.md set textwidth=80
+au BufRead,BufNewFile *.markdown set textwidth=80
+
+iabbrev didnt didn't
+iabbrev dont don't
+iabbrev wasnt wasn't
