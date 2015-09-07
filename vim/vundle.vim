@@ -34,8 +34,8 @@ Plugin 'vim-auto-save'
 let g:auto_save = 1  " enable AutoSave on Vim startup
 let g:auto_save_no_updatetime = 5
 
-" use SHA cfc14a4, some nimrod broke the plugin sometime after this
-Plugin 'bogado/file-line',  {'pinned': 1} " lets you specify line number when opening a file from the command line
+" my own fork because some nimrod broke it after this SHA
+Plugin 'lparry/file-line' " lets you specify line number when opening a file from the command line
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
