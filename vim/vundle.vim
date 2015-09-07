@@ -20,7 +20,6 @@ Plugin 'sjl/gundo.vim'
 Plugin 'ConradIrwin/vim-bracketed-paste' " Make vim's paste less shit
 Plugin 'tpope/vim-repeat' " lets . interact with plugin maps
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'bogado/file-line' " lets you specify line number when opening a file from the command line
 Plugin 'airblade/vim-gitgutter' " git status in a gutter
 Plugin 'tomtom/tcomment_vim' " easy code commenting
 "Plugin 'othree/vim-autocomplpop' " auto-show the auto-completion menu
@@ -34,6 +33,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-auto-save'
 let g:auto_save = 1  " enable AutoSave on Vim startup
 let g:auto_save_no_updatetime = 5
+
+" use SHA cfc14a4, some nimrod broke the plugin sometime after this
+Plugin 'bogado/file-line',  {'pinned': 1} " lets you specify line number when opening a file from the command line
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
