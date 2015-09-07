@@ -11,14 +11,18 @@ else
 endif
 
 " "colorscheme
-" let g:solarized_visibility = "high"
-" let g:solarized_termcolors = 256
-" let g:solarized_italic    =  0
-" let g:solarized_termtrans=1
-" colorscheme solarized
-colorscheme jellybeans
+let g:solarized_visibility = "high"
+let g:solarized_termcolors = 256
+let g:solarized_italic    =  0
+let g:solarized_termtrans=1
+colorscheme solarized
+" colorscheme jellybeans
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='powerlineish'
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h12
 
 " set guifont=Menlo\ Regular\ for\ Powerline:h14
@@ -33,13 +37,6 @@ set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h12
 " let g:airline_symbols.branch = '⭠'
 " let g:airline_symbols.readonly = '⭤'
 " let g:airline_symbols.linenr = '⭡'
-
-let os = substitute(system('uname'), "\n", "", "")
-if os == "Linux"
-  let g:Powerline_symbols = "unicode"
-else
-  let g:Powerline_symbols = "fancy"
-endif
 
 set wrap
 "set number " line numbers
